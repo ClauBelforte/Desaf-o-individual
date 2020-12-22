@@ -1,0 +1,342 @@
+/* variable de colores */
+
+:root {
+    --gris: rgb(49, 49, 49);
+}
+html {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden
+}
+/* Cierre de variable de colores */
+
+/* Acá comienza el header */
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 660px;
+    width: 100%;
+}
+.container-img {
+    height: 100%;
+    margin: 0;
+    width: 50%;
+}
+
+.container-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-encabezado {
+    background: var(--gris);
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0;
+}
+
+.icono-menu {
+    display: flex;
+    justify-content:flex-end;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.texto {
+    padding: 0 10%;
+    padding-bottom: 14%;
+    text-align: end;
+    font-size: 28px;
+    padding-top: 28%;
+    
+}
+
+.subtexto {
+    font-size: 15px;
+}
+
+/* Menú desplegable */
+
+.desplegable {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+}
+
+.menu {
+    width: 2.5rem;
+    height: 2.2rem;
+    background:rgba(211, 211, 211, 0.76) ;
+    position: absolute;
+    top: 0.2%;
+    right: 3%;
+    font-family: sans-serif;
+    margin-top: 2%;
+    padding:3px 9px 7px 3px;
+    border-radius: 32%;
+    font-size: 38px;
+    color: gray;
+    text-align: end;
+    transition: right 0.7s;
+    justify-content: center;
+}
+
+.closer {
+    font-family: sans-serif;
+    font-size: 40px;
+    color:gray;
+    text-align: end;
+    margin-right: 8%;
+    margin-top:5%;
+    position: absolute;
+    width: 90%;
+}
+
+.checkbox:checked ~.menu {
+   right: 10%;
+   border-radius: 0 0.5rem;
+}
+.right-panel {
+    position: absolute;
+    background: var(--gris);
+    color: white;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0;
+    height: 96%;
+    right: -50%;
+    display:flex;
+    transition: right 0.5s;
+}
+
+.checkbox:checked ~.right-panel {
+    right: 0;
+}
+
+.checkbox {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.times {
+    justify-content: flex-end;
+    display: flex;
+    width: 97%;
+    transition: all 0.4s ease;
+}
+
+.times i {
+    font-size: 45px;
+    color: lightgray;
+}
+
+
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    width: 90%;
+    background: var(--gris);   
+}
+
+footer p {
+    font-size: 14px;
+    margin:2px;
+    height: auto;
+}
+
+ul.secciones {
+    font-size: 20px;
+    padding-bottom: 100px;
+    padding-top: 10%;
+    margin-right: 20%;
+    width: 70%;
+}
+
+.texto-footer {
+    border-left: 1px solid gray;
+    color: gray;
+}
+
+footer ul li {
+    font-size: 45px;
+    padding-right: 14px;
+    
+}
+
+
+.secciones li {
+    margin-top: 16px;
+    padding-left: 70px;
+    padding-bottom: 16px;
+}
+
+.secciones a {
+    text-decoration: none;
+    color: white;
+}
+
+.iconos-footer {
+    height: 55px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding: 0;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.iconos-footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+.iconoytexto {
+    margin-left: 60px;
+    padding-bottom: 30px;
+    height: auto;
+    padding-left: 22px;
+}
+
+#clau {
+    width: 25%;
+    border-radius: 100%;
+    margin-right: 30px;
+    height: 70%;
+    margin-top: 40px;
+    margin-bottom: 2%;
+}
+
+/* Cierre del Header */
+
+/* Acá comienza el Main */
+
+h2 {
+    margin: 8%;
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+}
+
+.presentacion {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 3%;
+    padding-top: 4%;
+}
+
+.texto-secundario h3 {
+    font-size: 21px;
+}
+
+.texto-secundario p {
+    font-size: 19px;
+}
+
+/* Imágenes izquierda */
+
+.container-presentacion-left {
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 2px solid var(--gris);
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.container-presentacion-left .texto-secundario {
+    width: 40%;
+    padding-top: 3%;
+    padding-left: 4%;
+    text-align: end;
+}
+
+.container-left {
+    width: 55%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 0 #3d3b3b;
+}
+
+.container-left img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    -moz-transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    transition: all 1.9s;
+    height: 100%;
+}
+
+
+.container-left:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* Imágenes derecha */
+
+.container-presentacion-right {
+    display: flex;
+    flex-flow: row wrap;
+    border-left: 3px solid var(--gris);
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.container-presentacion-right .texto-secundario {
+    width: 38%;
+    padding-right: 3%;
+    padding-top: 3%;
+    text-align: start;
+    padding-left: 4%;
+}
+
+.container-right {
+    width: 55%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 0 #3d3b3b;
+}
+
+.container-right img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    -moz-transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    transition: all 1.9s;
+    height: 100%;
+}
+
+.container-right:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
