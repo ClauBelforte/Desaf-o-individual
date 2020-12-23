@@ -104,12 +104,12 @@ html::-webkit-scrollbar-thumb {
     flex-flow: column wrap;
     justify-content: flex-start;
     padding: 0;
-    width: 100%;
+    width: 80%;
 }
 
 .menu {
     width: 2.5rem;
-    height: 2.2rem;
+    height: 2rem;
     position: absolute;
     top: 0.2%;
     right: 3%;
