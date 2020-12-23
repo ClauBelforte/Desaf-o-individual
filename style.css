@@ -1,7 +1,15 @@
 /* variable de colores */
 
 :root {
-    --gris: rgb(49, 49, 49);
+ 
+    --rosa: #e9d900;
+    --rojo: #D90429;
+    --blanco: #ffffff;
+    --violetaoscuro:#43960c;
+    --negro: #252a34;
+    --gris:#b30b27;
+    --violeta: #b5179e;
+    --negro: rgb(39, 37, 37);
 }
 html {
     margin: 0;
@@ -31,9 +39,20 @@ html {
     object-fit: cover;
 }
 
+.container-logo {
+    position: absolute;
+    width: 15%;
+    margin-top: 2.5rem;
+    margin-left: 1%;
+}
+
+.logo {
+    width: 15%;
+}
+
 .container-encabezado {
     background: var(--gris);
-    color: white;
+    color: var(--blanco);
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -74,7 +93,6 @@ html {
 .menu {
     width: 2.5rem;
     height: 2.2rem;
-    background:rgba(211, 211, 211, 0.76) ;
     position: absolute;
     top: 0.2%;
     right: 3%;
@@ -83,21 +101,40 @@ html {
     padding:3px 9px 7px 3px;
     border-radius: 32%;
     font-size: 38px;
-    color: gray;
+    color:var(--violetaoscuro);
     text-align: end;
     transition: right 0.7s;
     justify-content: center;
 }
 
+.menu i:hover {
+    color: var(--rosa);
+}
+
+label {
+    overflow: hidden;
+}
+
 .closer {
     font-family: sans-serif;
     font-size: 40px;
-    color:gray;
+    color: var(--violetaoscuro);
     text-align: end;
     margin-right: 8%;
     margin-top:5%;
     position: absolute;
     width: 90%;
+   
+    
+}
+
+.closer i {
+    transition: 1s;
+}
+
+.closer i:hover {
+   transform: rotate(280deg);
+   color: var(--rosa);
 }
 
 .checkbox:checked ~.menu {
@@ -107,7 +144,7 @@ html {
 .right-panel {
     position: absolute;
     background: var(--gris);
-    color: white;
+    color:r;
     flex-flow: column wrap;
     justify-content: space-between;
     width: 50%;
@@ -115,7 +152,7 @@ html {
     height: 96%;
     right: -50%;
     display:flex;
-    transition: right 0.5s;
+    transition: right 0.8s;
 }
 
 .checkbox:checked ~.right-panel {
@@ -138,12 +175,12 @@ li {
     justify-content: flex-end;
     display: flex;
     width: 97%;
-    transition: all 0.4s ease;
+    transition: all 0.6s ease;
 }
 
 .times i {
     font-size: 45px;
-    color: lightgray;
+    color: var(--blanco);
 }
 
 
@@ -174,8 +211,8 @@ ul.secciones {
 }
 
 .texto-footer {
-    border-left: 1px solid gray;
-    color: gray;
+    border-left: 1px solid var(--blanco);
+    color: var(--blanco);
 }
 
 footer ul li {
@@ -193,7 +230,17 @@ footer ul li {
 
 .secciones a {
     text-decoration: none;
-    color: white;
+    color: var(--blanco);
+    
+}
+
+.secciones a li {
+    transition: 0.6s;
+}
+
+.secciones a li:hover {
+    transform: scale(1.1);
+    color: var(--rosa);
 }
 
 .iconos-footer {
@@ -209,7 +256,7 @@ footer ul li {
 }
 
 .iconos-footer a {
-    color: gray;
+    color:var(--blanco);
     text-decoration: none;
 }
 
@@ -224,9 +271,26 @@ footer ul li {
     width: 25%;
     border-radius: 100%;
     margin-right: 30px;
-    height: 70%;
+    height: 62%;
     margin-top: 40px;
     margin-bottom: 2%;
+    object-fit: cover;
+}
+
+.facebook:hover i{
+    color: var(--rosa);
+}
+
+.instagram:hover i{
+    color: var(--rosa);
+}
+
+.linkedin:hover i{
+    color: var(--rosa);
+}
+
+.github:hover i{
+    color: var(--rosa);
 }
 
 /* Cierre del Header */
@@ -241,6 +305,7 @@ h2 {
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
+    color: var(--gris);
 }
 
 .presentacion {
@@ -270,9 +335,9 @@ body {
 }
 
 .container-presentacion-left .texto-secundario {
-    width: 40%;
+    width: 30%;
     padding-top: 3%;
-    padding-left: 4%;
+    padding-left: 9%;
     text-align: end;
 }
 
@@ -311,8 +376,8 @@ body {
 }
 
 .container-presentacion-right .texto-secundario {
-    width: 38%;
-    padding-right: 3%;
+    width: 30%;
+    padding-right: 9%;
     padding-top: 3%;
     text-align: start;
     padding-left: 4%;
