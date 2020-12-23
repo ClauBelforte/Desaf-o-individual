@@ -5,16 +5,32 @@
     --rosa: #e9d900;
     --rojo: #D90429;
     --blanco: #ffffff;
-    --violetaoscuro:#43960c;
+    --violetaoscuro:#3a7214;
     --negro: #252a34;
-    --gris:#b30b27;
+    --gris:darkred;
     --violeta: #b5179e;
     --negro: rgb(39, 37, 37);
 }
 html {
     margin: 0;
     width: 100%;
-    overflow-x: hidden
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 7px;
+    background: var(--gris);
+    object-fit: cover;
+    height: 100%;
+  
+}
+
+html::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-image: url(img/gip.gif);
+    border-radius: 5px;
+    height: 30%;
+    transform: scale(2);
 }
 /* Cierre de variable de colores */
 
@@ -58,6 +74,7 @@ html {
     justify-content: space-between;
     width: 50%;
     margin: 0;
+    height: 100%;
 }
 
 .icono-menu {
@@ -329,7 +346,7 @@ body {
 .container-presentacion-left {
     display: flex;
     flex-flow: row wrap;
-    border-right: 2px solid var(--gris);
+    border-right: 2px solid var(--violetaoscuro);
     width: 100%;
     margin-bottom: 10%;
 }
@@ -370,7 +387,7 @@ body {
 .container-presentacion-right {
     display: flex;
     flex-flow: row wrap;
-    border-left: 3px solid var(--gris);
+    border-left: 3px solid var(--violetaoscuro);
     width: 100%;
     margin-bottom: 10%;
 }
